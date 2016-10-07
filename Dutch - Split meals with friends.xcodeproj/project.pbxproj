@@ -291,6 +291,7 @@
 				93211DD91DA7E99700F52038 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
