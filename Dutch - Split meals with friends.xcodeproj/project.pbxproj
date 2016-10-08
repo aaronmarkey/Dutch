@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		930468951DA94AE400B1B912 /* custom.plist in Resources */ = {isa = PBXBuildFile; fileRef = 930468941DA94AE400B1B912 /* custom.plist */; };
 		93211DC61DA7E99700F52038 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93211DC51DA7E99700F52038 /* AppDelegate.swift */; };
 		93211DC81DA7E99700F52038 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93211DC71DA7E99700F52038 /* ViewController.swift */; };
 		93211DCB1DA7E99700F52038 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93211DC91DA7E99700F52038 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		930468941DA94AE400B1B912 /* custom.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = custom.plist; sourceTree = "<group>"; };
 		93211DC21DA7E99700F52038 /* Dutch - Split meals with friends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dutch - Split meals with friends.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93211DC51DA7E99700F52038 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93211DC71DA7E99700F52038 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				93211DCF1DA7E99700F52038 /* Assets.xcassets */,
 				93211DD11DA7E99700F52038 /* LaunchScreen.storyboard */,
 				93211DD41DA7E99700F52038 /* Info.plist */,
+				930468941DA94AE400B1B912 /* custom.plist */,
 				93211DCC1DA7E99700F52038 /* Dutch___Split_meals_with_friends.xcdatamodeld */,
 			);
 			path = "Dutch - Split meals with friends";
@@ -127,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93211DD31DA7E99700F52038 /* LaunchScreen.storyboard in Resources */,
+				930468951DA94AE400B1B912 /* custom.plist in Resources */,
 				93211DD01DA7E99700F52038 /* Assets.xcassets in Resources */,
 				93211DCB1DA7E99700F52038 /* Main.storyboard in Resources */,
 			);

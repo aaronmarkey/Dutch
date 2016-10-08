@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>defaultBillAmount</key>
+	<real>0</real>
+	<key>defaultNumPeople</key>
+	<integer>1</integer>
+	<key>defaultTipPercentage</key>
+	<integer>4</integer>
+	<key>color</key>
+	<array>
+		<integer>65</integer>
+		<integer>222</integer>
+		<string>255</string>
+	</array>
+</dict>
+</plist>
