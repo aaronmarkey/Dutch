@@ -14,6 +14,7 @@
 		93211DCE1DA7E99700F52038 /* Dutch___Split_meals_with_friends.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93211DCC1DA7E99700F52038 /* Dutch___Split_meals_with_friends.xcdatamodeld */; };
 		93211DD01DA7E99700F52038 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93211DCF1DA7E99700F52038 /* Assets.xcassets */; };
 		93211DD31DA7E99700F52038 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93211DD11DA7E99700F52038 /* LaunchScreen.storyboard */; };
+		93CC8EED1DAA1094007CBE3B /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CC8EEC1DAA1094007CBE3B /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		93211DCF1DA7E99700F52038 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93211DD21DA7E99700F52038 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93211DD41DA7E99700F52038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93CC8EEC1DAA1094007CBE3B /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				93211DD41DA7E99700F52038 /* Info.plist */,
 				930468941DA94AE400B1B912 /* custom.plist */,
 				93211DCC1DA7E99700F52038 /* Dutch___Split_meals_with_friends.xcdatamodeld */,
+				93CC8EEC1DAA1094007CBE3B /* Utilities.swift */,
 			);
 			path = "Dutch - Split meals with friends";
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			files = (
 				93211DCE1DA7E99700F52038 /* Dutch___Split_meals_with_friends.xcdatamodeld in Sources */,
 				93211DC81DA7E99700F52038 /* ViewController.swift in Sources */,
+				93CC8EED1DAA1094007CBE3B /* Utilities.swift in Sources */,
 				93211DC61DA7E99700F52038 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

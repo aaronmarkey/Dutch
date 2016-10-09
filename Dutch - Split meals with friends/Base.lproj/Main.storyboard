@@ -41,7 +41,10 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.0" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OY2-wl-c53" userLabel="billAmount">
                                 <rect key="frame" x="20" y="113" width="260" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="billAmountField:" destination="BYZ-38-t0r" eventType="editingChanged" id="Xmv-8K-UaM"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLB-fv-efc">
                                 <rect key="frame" x="20" y="167" width="29" height="21"/>
@@ -52,6 +55,9 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="4" minValue="0.0" maxValue="8" translatesAutoresizingMaskIntoConstraints="NO" id="O41-ug-8LU" userLabel="tipPercentageSlider">
                                 <rect key="frame" x="18" y="196" width="564" height="31"/>
                                 <color key="tintColor" red="0.25458311991810745" green="0.87007612384246213" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="tipSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="d7x-yh-7r7"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of People:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9e-Nm-mxy">
                                 <rect key="frame" x="20" y="250" width="143" height="21"/>
@@ -62,6 +68,9 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="7lh-49-0g7" userLabel="numPeopleSlider">
                                 <rect key="frame" x="18" y="279" width="564" height="31"/>
                                 <color key="tintColor" red="0.25458311989999999" green="0.87007612379999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="numPeopleSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="ke3-sA-s6A"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hdd-Zb-NMf" userLabel="tipPercentage">
                                 <rect key="frame" x="73" y="167" width="50" height="21"/>
@@ -152,6 +161,13 @@
                         </variation>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="numPeopleDisplay" destination="l4N-WK-nAg" id="VbX-nc-t3x"/>
+                        <outlet property="perPersonAmountDisplay" destination="NUk-DW-11w" id="aBl-dJ-DQZ"/>
+                        <outlet property="tipAmountDisplay" destination="4XY-LN-qWH" id="qFs-C1-MV1"/>
+                        <outlet property="tipPercentageDisplay" destination="Hdd-Zb-NMf" id="ejw-oQ-rmP"/>
+                        <outlet property="totalAmountDisplay" destination="Q7Y-wx-AJG" id="LhO-Qr-Pzd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

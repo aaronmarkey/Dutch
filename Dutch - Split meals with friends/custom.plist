@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>defaultErrorMessage</key>
+	<string>The bill amount should be a dollar amount greater than 0.00 dollars. Ex: 45.75</string>
 	<key>defaultBillAmount</key>
 	<real>0</real>
 	<key>defaultNumPeople</key>
