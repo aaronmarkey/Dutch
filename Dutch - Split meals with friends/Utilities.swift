@@ -14,19 +14,19 @@ import UIKit
  - Parameter errorMessage: The message to show in the error.
  - Parameter view: The view to display this alert on top of.
  */
-func createAndDisplayErrorAlert(errorMessage: String, view: UIViewController) {
+func createAndDisplayErrorAlert(_ errorMessage: String, view: UIViewController) {
     
     //create alert conrtroller
-    let alertController = UIAlertController(title: "Error", message: errorMessage, preferredStyle: .Alert)
+    let alertController = UIAlertController(title: "Error", message: errorMessage, preferredStyle: .alert)
     
     //set cancel button title
-    let cancelButton = UIAlertAction(title: "OK", style: .Cancel, handler: nil)
+    let cancelButton = UIAlertAction(title: "OK", style: .cancel, handler: nil)
     
     //add button to alert controller
     alertController.addAction(cancelButton)
     
     //present the controller
-    view.presentViewController(alertController, animated: true, completion: nil)
+    view.present(alertController, animated: true, completion: nil)
 }
 
 /*
@@ -34,7 +34,7 @@ func createAndDisplayErrorAlert(errorMessage: String, view: UIViewController) {
  
  - Returns: sliderValue * 5.
  */
-func calculateTipPercentage(sliderValue: Int) -> Int {
+func calculateTipPercentage(_ sliderValue: Int) -> Int {
     return sliderValue * 5
 }
 
@@ -44,7 +44,7 @@ func calculateTipPercentage(sliderValue: Int) -> Int {
  
  - Returns: The gross amount of the bill.
  */
-func calculateTotalBill(net: Double, tip: Double) -> Double {
+func calculateTotalBill(_ net: Double, tip: Double) -> Double {
     return net + tip
 }
 
@@ -54,7 +54,7 @@ func calculateTotalBill(net: Double, tip: Double) -> Double {
  
  - Returns: How much each person should pay.
  */
-func calculateCostPerPerson(total: Double, numPeople: Int) -> Double {
+func calculateCostPerPerson(_ total: Double, numPeople: Int) -> Double {
     return total / Double(numPeople)
 }
 
@@ -64,7 +64,7 @@ func calculateCostPerPerson(total: Double, numPeople: Int) -> Double {
  
  - Returns: The amount the tip equates to.
  */
-func calculateTipAmount(total: Double, tip: Int) -> Double {
+func calculateTipAmount(_ total: Double, tip: Int) -> Double {
     return total * (Double(tip) / 100.00)
 }
 
@@ -76,8 +76,8 @@ func calculateTipAmount(total: Double, tip: Int) -> Double {
 
  - Returns: The formatted number as a String.
 */
-func formatNumber(number: NSNumber, style: NSNumberFormatterStyle) -> String {
-    let formatter = NSNumberFormatter()
+func formatNumber(_ number: NSNumber, style: NumberFormatter.Style) -> String {
+    let formatter = NumberFormatter()
     formatter.numberStyle = style
-    return formatter.stringFromNumber(number)!
+    return formatter.string(from: number)!
 }

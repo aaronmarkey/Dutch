@@ -38,16 +38,16 @@ class ViewController: UIViewController {
     
 
     //MARK: Actions
-    @IBAction func tipSlider(sender: UISlider) {
+    @IBAction func tipSlider(_ sender: UISlider) {
         tipAmountScalar = Int(sender.value)
     }
     
-    @IBAction func numPeopleSlider(sender: UISlider) {
+    @IBAction func numPeopleSlider(_ sender: UISlider) {
         numPeople = Int(sender.value)
     }
     
-    @IBAction func billAmountField(sender: UITextField) {
-        let input = sender.text?.stringByReplacingOccurrencesOfString(" ", withString: "")
+    @IBAction func billAmountField(_ sender: UITextField) {
+        let input = sender.text?.replacingOccurrences(of: " ", with: "")
         if input == "" {
             billAmount = 0.00
         } else {
@@ -67,30 +67,30 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         //get dictionary of  values from custom plist
-        let path = NSBundle.mainBundle().pathForResource("custom", ofType: "plist")
+        let path = Bundle.main.path(forResource: "custom", ofType: "plist")
         let dict = NSDictionary(contentsOfFile: path!)
         
         //set default values
-        billAmount = dict!.objectForKey("defaultBillAmount") as! Double
-        numPeople = dict!.objectForKey("defaultNumPeople") as! Int
-        tipAmountScalar = dict!.objectForKey("defaultTipPercentage") as! Int
-        errorMessage = dict!.objectForKey("defaultErrorMessage") as! String
+        billAmount = dict!.object(forKey: "defaultBillAmount") as! Double
+        numPeople = dict!.object(forKey: "defaultNumPeople") as! Int
+        tipAmountScalar = dict!.object(forKey: "defaultTipPercentage") as! Int
+        errorMessage = dict!.object(forKey: "defaultErrorMessage") as! String
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
-        return .All
+    override var supportedInterfaceOrientations : UIInterfaceOrientationMask {
+        return .all
     }
     
     //MARK: UIResponder functions
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
     
-    func textFieldShouldReturn(textField: UITextView) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextView) -> Bool {
         textField.resignFirstResponder();
         return true
     }
@@ -109,9 +109,9 @@ class ViewController: UIViewController {
         //update display with value
         tipPercentageDisplay.text = "\(tipPercentage)%"
         numPeopleDisplay.text = "\(numPeople)"
-        perPersonAmountDisplay.text = formatNumber(NSNumber(double: costPerPerson), style: .CurrencyStyle)
-        tipAmountDisplay.text = formatNumber(NSNumber(double: tipAmount), style: .CurrencyStyle)
-        totalAmountDisplay.text = formatNumber(NSNumber(double: totalBillAmount), style: .CurrencyStyle)
+        perPersonAmountDisplay.text = formatNumber(NSNumber(value: costPerPerson as Double), style: .currency)
+        tipAmountDisplay.text = formatNumber(NSNumber(value: tipAmount as Double), style: .currency)
+        totalAmountDisplay.text = formatNumber(NSNumber(value: totalBillAmount as Double), style: .currency)
     }
 
 }
